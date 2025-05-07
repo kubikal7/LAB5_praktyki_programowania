@@ -35,6 +35,6 @@ def test_divide(a, b, expected):
 
 
 @pytest.mark.parametrize("a, expected", [(7, "111"), (99, "1100011"), (41, "101001")])
-def binary(a, expected):
+def test_binary(a, expected):
     result = utils.binary(a)
     assert result == expected
