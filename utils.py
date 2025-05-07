@@ -19,3 +19,12 @@ def multiply(a: int, b: int) -> int:
 def divide(a: int, b: int) -> float:
     """Function divide two numbers."""
     return a / b
+
+
+def binary(a: int) -> str:
+    """Function binary from number."""
+    res = ""
+    while a > 0:
+        res = str(a % 2) + res
+        a //= 2
+    return res
